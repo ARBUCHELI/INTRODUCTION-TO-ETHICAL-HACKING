@@ -1,0 +1,18 @@
+# INTRO TO BUG HUNTING
+----------------------
+
+* Introduction
+--------------
+Have you ever thought about a career in bug hunting?
+
+Not hunting for little critters that roam outside your home or inside but hunting for software bugs, errors in the code, found in an application or service. Hackers that search, find, and 
+report or eliminate bugs within an application or service are called bug hunters. The process of searching, identifying, and eliminating bugs in a system is bug hunting.
+
+As an ethical hacker, one of your tasks is to search for and eliminate bugs in a system. Applications or services that have bugs are prone to vulnerabilities and since malicious actors 
+can use vulnerabilities to gain access to a system, ethical hackers must act quickly to remove the bugs once identified.
+
+In this lesson, you will learn and practice bug hunting. You will learn about the hacking process, ethical hacking tactics, and, lastly, how to be an effective bug hunter and ethical 
+hacker. That said, let’s begin!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
