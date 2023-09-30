@@ -199,10 +199,67 @@ Select Next to continue with the checkpoint.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Challenge: Hunting for Web Vulnerability
+------------------------------------------
+Here’s a challenge! You’re free to skip this exercise if you choose. To skip, just select Next to continue.
 
+However, if you choose to accept this challenge, your task is to identify and note as many vulnerabilities as you can find within the website. Once you identify and note all the 
+vulnerabilities on the site, compare what you’ve noted with the site_vulnerabilities.txt file.
 
+Hint: Try jake@newcomsolutions.com
 
+index.html
+----------
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="appletFramework.js"></script>
+</head>
+<body>
+  <div class="centered">
+    <img src="newcom.png" alt="NewCom Financial logo" class="logo">
+    <div id="mainContainer">
+      <h1>Log In</h1>
+      <br/>
+      <form id="formElem">
+      <div>
+        <label for="username">Email:</label>
+        <input name="username" id="username" type="text" />
+        <p id="usernameError" class="errorMessage" style="display: none"></p>
+      <br>
+    <br>
+    <label for="password">Password:</label>
+    <input name="password" id="password" type="password" />
+    <p id="passwordError" class="errorMessage" style="display: none"></p>
+  <br>
+</div>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+<p id="injectionOutput"></p>
+<script src="script_home.js"></script>
+</body>
+</html>
 
+site_vulnerabilities.txt
+------------------------
+1. Password field does not hide user's password
+2. When you place `jake@newcomsolutions.com` in the email field and a wrong password, the error message inform us that there is a user with the email `jake@newcomsolutions.com`
+3. The site is prone to SQL injection. Inserting the SQL code '1' OR '1' = '1' within the password field outputted all the account information.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Conclusion
+------------
+Throughout this lesson, you’ve learned about ethical hacking and bug hunting, the hacking process, and practiced searching, identifying, and eliminating bugs and vulnerabilities within an 
+application.
+
+As mentioned earlier, as an ethical hacker, one of your tasks is to search for, and possibly eliminate, any vulnerabilities in a system. Applications or services that have bugs or 
+vulnerabilities will give access to malicious actors to do some serious damage to the system. That said, ethical hackers must act quickly and adapt.
 
 
 
