@@ -51,7 +51,153 @@ The hacking process consists of the following:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Hunting for Sensitive Data Exposure
+-------------------------------------
+In this exercise, you will search for bugs and vulnerabilities in a newly created bank application. The bank application is called FakeBank Financial. They recently hired an engineering 
+team to create an application that will make banking much easier.
 
+To ensure that the application is safe and secure, they reached out to you to perform an analysis of the application. In other words, they permitted you to hack the site to identify any 
+bugs and vulnerabilities.
+
+In this task, we will focus on identifying any bugs and vulnerabilities on the login page of FakeBank Financial.
+
+Instructions
+------------
+Checkpoint 1 Passed
+1.
+At first glance, the application seems okay.
+
+Let’s test the Username and Password input fields to ensure that the information that returns to us is appropriate.
+
+Input the username and password below into the appropriate fields.
+
+Username: random@fakefinancial.com
+
+Password: random
+
+Once done, click the Run to continue to the next checkpoint.
+
+
+Hint
+Input the username: random@fakefinancial.com
+
+Input the password: random
+
+Checkpoint 2 Passed
+2.
+Uh oh! While testing if the input fields return the appropriate messages, we found a bug!
+
+The password field does not hide the user’s password. Let’s try to fix this bug by inspecting the page’s code.
+
+We can inspect the page’s code by viewing the index.html file within the code editor.
+
+Let’s navigate to the password field, which looks like the code below:
+
+<label for="password">Password:</label>
+<input name="password" id="password"/>
+
+To fix this bug, we can add a type="password" within the <input/> tag. The result should be the below:
+
+<label for="password">Password:</label>
+<input name="password" id="password" type="password"/>
+
+Once you have made the change to the code, click the Run to save and run the new code and test out the result by using the same credentials.
+
+
+Hint
+Replace the following code:
+
+<label for="password">Password:</label>
+<input name="password" id="password"/>
+
+with the new code:
+
+<label for="password">Password:</label>
+<input name="password" id="password" type="password"/>
+
+Checkpoint 3 Passed
+3.
+Hmm, while navigating to the password section in the index.html file, did you notice some vulnerable information above the username section?
+
+It seems like it’s the username and password for the admin account. Let’s input those credentials into the username and password field to see if they work.
+
+
+Hint
+Input the username: admin
+
+Input the password: @dmin#1234
+
+Checkpoint 4 Passed
+4.
+Wow, we got in!
+
+This is a major vulnerability in the application. We were able to log in as someone else, but, most importantly, we were able to log in as admin and view personal information such as:
+
+email address
+phone number
+social security number
+checking balance
+saving balance
+Let’s go ahead and remove the credentials from the index.html file.
+
+Let’s also go back to the login page. Place the following URL in the URL tab:
+
+http://localhost:8000
+
+Once done, click the Run to continue to the next checkpoint.
+
+
+Hint
+Remove the following information from the index.html file:
+
+        <!--
+        Username = admin
+        Password = @dmin#1234
+      -->
+
+Checkpoint 5 Passed
+5.
+Let’s do one last vulnerability test, a SQL injection.
+
+A SQL injection is a common vulnerability affecting applications that use SQL as their database language. A hacker can use their knowledge of the SQL language to cleverly construct text 
+inputs that modify the backend SQL query to their liking. They can force the application to output private data or respond in ways that provide intel. To specify, we will be doing a 
+boolean-based injection that involves SQL statements that can confirm TRUE/FALSE questions about the database.
+
+To perform a SQL injection, we will insert the following statement in the password input field:
+
+'1' OR '1' = '1'
+
+Once inserted, click the Submit button in the application and check the page to identify if any private data has been exposed.
+
+NOTE: You might need to zoom out to view the entire page.
+
+Once done, click the Run to continue to the next checkpoint.
+
+
+Hint
+Input '1' OR '1' = '1' for the password. If the application requires a username, try the username we discovered in the previous task.
+
+Checkpoint 6 Passed
+6.
+We found another vulnerability! This website is prone to SQL injection. To resolve this vulnerability, there are two main things we can do; sanitization and parameterized queries.
+
+Sanitization removes dangerous characters from user input, and parameterized queries are queries with placeholders used as parameters during the code execution.
+
+Nonetheless, for the sake of this lesson, we’ll pause here.
+
+That said, great job! You’ve hunted, identified, and removed bugs and vulnerabilities for FakeBank Financial login page. You were able to gain a high-level overview of bug hunting and 
+practice it on a web application.
+
+Though we are pausing here, this does not mean that FakeBank Financial is completely free of bugs and vulnerabilities. There may be plenty of other hidden bugs and vulnerabilities within 
+the application. Explore the application and its code to identify any other missed issues.
+
+If you are satisfied with all that you found, click Run and then Next to continue with the lesson.
+
+
+Hint
+Select Next to continue with the checkpoint.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
