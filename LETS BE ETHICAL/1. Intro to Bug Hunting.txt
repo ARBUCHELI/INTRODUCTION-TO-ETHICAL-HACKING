@@ -16,3 +16,71 @@ hacker. That said, let’s begin!
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* The Hacking Process
+---------------------
+Before we go hunting, let’s learn about the hacking process. The hacking process is a combination of ethical hacking tactics for organizational defense. Having a list of tactics to ensure 
+organizational defenses is a helpful resource for ethical hackers and bug hunters. Ethical hackers can use these tactics to ensure the security of a system and identify potential areas of 
+vulnerabilities and software bugs.
+
+The hacking process consists of the following:
+
+	. Footprinting
+	. Scanning
+	. Enumeration
+	. System Hacking
+	. Escalation of Privilege
+	. Planting Backdoors
+	. Covering Tracks
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Footprinting, also known as the “Reconnaissance” phase, is passive information gathering of targets before active attack activities.
+
+2. Scanning is an initial active/passive inspecting technique to gather technical information on target systems.
+
+3. Enumeration is the consolidation and gathering of more detailed information on target systems and networks.
+
+4. System Hacking is the planning and execution of attacks conducted based on the information gathered in Footprinting, Scanning, and Enumeration.
+
+5. Escalation of Privilege is when an attacker is successful and can gain access to the systems/networks of the organization.
+
+6. Planting Backdoors is leaving an entry point to a compromised system for easy access to further attack activities.
+
+7. Covering Tracks is the act of removing or destroying signs of intrusion and activities performed on a system.
+
+8. Now that we’ve learned about the hacking process, let’s get to hunting!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
