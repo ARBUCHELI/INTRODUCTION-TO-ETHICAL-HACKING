@@ -159,3 +159,10 @@ To pass this checkpoint, click on the Terminal and press the Enter key.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Conclusion
+------------
+Networking enumeration is a powerful tool for hackers and is used by attackers and defenders alike. There are many different network enumerators available, with different specialties. The 
+previous exercise was based on NMap. NMap is versatile, capable of everything from simple port scanning to running scripts that attempt to determine whether specific vulnerabilities exist 
+on a target. It’s also free and open-source.
+
+Another common network enumeration tool is Nessus, a paid tool designed more for defensive use. Some exploitation frameworks, such as Metasploit, also include network enumeration tools.
