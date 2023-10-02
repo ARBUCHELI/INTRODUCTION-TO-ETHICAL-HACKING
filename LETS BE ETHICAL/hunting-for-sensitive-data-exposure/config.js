@@ -1,6 +1,4 @@
 const settings = {
-    /*=== PLEASE DO NOT MAKE ANY EDITS ABOVE THIS LINE ===*/
-  
     title: "FakeBank Financial",
   
     users: [
