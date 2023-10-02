@@ -5,6 +5,7 @@ const settings = {
       {
         username: "admin",
         password: "@dmin#1234",
+        //This is just a mock application (Github)
         email: "admin@fakebank.org",
         phone: "123-555-0678",
         social: "111-111-1122",
