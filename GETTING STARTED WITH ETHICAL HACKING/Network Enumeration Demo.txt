@@ -1,0 +1,44 @@
+# NETWORK ENUMERATION DEMO
+--------------------------
+
+* Introduction
+--------------
+If we want to hack a computer, we must know a few things.
+
+Before anything else, we need to know that the computer exists in the first place - it’s hard to hack a computer that doesn’t exist. We also need information about the computer, and the 
+more we have, the better. At a minimum, we’ll want to know what operating system and software the computer is running so that you can start looking up potential exploits.
+
+One of the ways we can gain information about computers is through Network Enumeration (also known as Network Scanning). Network enumeration is an incredibly useful reconnaissance tool 
+that can tell us what computers exist on a network and provide information about what those computers are. We can think of network enumeration like sonar or radar, sending out a pulse 
+(or a packet of data in this case) and seeing what comes back. Also, like sonar and radar, network enumeration can make a lot of noise, and doing it recklessly will alert defenders to 
+your activity.
+
+Network enumeration can also be used for defensive or utility purposes, such as creating network diagrams or finding misconfigured computers.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Ports and You
+---------------
+An important concept to understand for network enumeration (and networking in general) is the concept of ports. Ports are to IP addresses, what apartment numbers are to street addresses. 
+Ports don’t specify which computer the data gets sent to, but the computer uses the port number to figure out which program to give the data to once the data arrives. Knowing what ports a 
+computer has active can give us an idea of what services the computer is running and what the computer’s purpose is.
+
+Here’s a summary of the most important things to know about ports:
+
+	. There are 65536 different ports, numbered 0-65535.
+
+	. Ports 0-1023 are reserved for the most important or well-known protocols.
+
+	. Ports 1024-49151 are associated with less common protocols and services.
+
+	. Ports 49152 and up are dynamic and can be used as needed.
+
+	. Ports can be open or closed. Ports are closed by default but are opened when a computer runs a service that uses that port.
+
+	. Services can run on ports other than the port they are associated with by default. Likewise, services can run on ports associated with different services if configured. This can 
+	be used defensively to make network enumeration more difficult or offensively to obfuscate malicious connections.
+
+Don’t worry about memorizing specific port numbers for now! We’ll provide relevant port numbers as needed for this lesson.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
