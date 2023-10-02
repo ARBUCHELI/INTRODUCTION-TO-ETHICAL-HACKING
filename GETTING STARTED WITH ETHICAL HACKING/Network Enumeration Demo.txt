@@ -42,3 +42,120 @@ Don’t worry about memorizing specific port numbers for now! We’ll provide re
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Time to Scan
+--------------
+The situation is as follows: One of the computers in a network has been infected with malware.
+
+Our task is to use network enumeration to determine which computer is likely to be infected so the computer can be wiped. We know the malware opens a port while it runs, but we don’t know 
+which port. 
+
+In this exercise, we’ll use Nmap, a popular network scanning/enumeration tool, to identify which computer needs to be wiped. We’ll be using IP addresses in 10.1.1.x range for 
+demonstration purposes.
+
+Before we begin our discovery, here are a few things to note:
+
+	. Nmap, Network Mapper, is a port scanner/network mapping tool. It is the most used scanning tool by ethical and unethical hackers. The tool scans systems/networks for IP 
+	addresses, ports, OS details, and applications/services installed.
+
+	. Nmap is an open-source command-line tool designed to run on the Linux operating system (OS).
+
+	. Nmap is an open-source tool that is open to the public to use and improve on.
+
+Note: Some of these services are not running on this box, so we have faked some terminal interactions in this specific exercise. This is so you can experience how these commands work in 
+the real world. 
+
+. Instructions
+--------------
+Checkpoint 1 Passed
+1.
+Let’s start by using nmap to scan this box! What services are running in this lesson?
+
+We can use the basic command nmap [target] to scan a target. In this case, localhost is our target.
+
+Use the command:
+
+	. nmap localhost
+
+
+Hint
+Type and run the command nmap localhost in the terminal.
+
+Checkpoint 2 Passed
+2.
+Great! We’ve scanned our target and identified a list of running services.
+
+It would be nice to see how many computers are on our part of the network. Let’s scan the wider network to find out! (The easiest way to do that is by pinging every address.)
+
+We can use the command:
+
+	. nmap -sn 10.1.1.0-255
+
+to ping every address in our desired range.
+
+	. The -sn parameter specifies that we want to use ping scanning.
+	. 10.1.1.0-255 means we want to scan this range of addresses.
+
+Hint
+Type and run the command nmap -sn 10.1.1.0-255 in the terminal.
+
+Checkpoint 3 Passed
+3.
+It looks like there are four hosts, not including ourselves, on the network.
+
+We discovered hosts up at these addresses:
+
+	. 10.1.1.21
+	. 10.1.1.22
+	. 10.1.1.23
+	. 10.1.1.24
+
+We know that the hosts exist, but not much more than that. Let’s run a more intensive scan, targeting the four hosts specifically.
+
+Use the command:
+
+	. nmap -sS -T4 --top-ports 1000 10.1.1.21-24
+
+to scan the 1000 most commonly open ports on our targets.
+
+	. T4 specifies that this will be done fairly quickly.
+	. sS is short for “stealth scan” (which is not very stealthy these days).
+
+Hint
+Type and run the command nmap -sS -T4 --top-ports 1000 10.1.1.21-24 in the terminal.
+
+Checkpoint 4 Passed
+4.
+Now, we’re starting to get a good picture of the hosts!
+
+Notice that the host on 10.1.1.24 has ports 80 and 443 open. These ports are associated with the HTTP and HTTPS protocols, indicating that this might be a server.
+
+Servers are high-value targets, so this would be a good candidate for further investigation.
+
+We can scan every port on this specific target using the command:
+
+	. nmap -p- 10.1.1.24
+
+
+Hint
+Type and run the command nmap -p- 10.1.1.24 in the terminal.
+
+Checkpoint 5 Passed
+5.
+Hmm, port 12345 looks a bit odd…
+
+	. 12345/tcp open netbus 
+
+Further investigation reveals that it’s associated with the NetBus Remote Access Trojan. Looks like we’ve found our malware!
+
+Press Enter in the Terminal to complete this checkpoint.
+
+Then select Next to continue with the lesson.
+
+
+Hint
+Google is your friend when you’re trying to figure out what service a port is associated with, or what a service does!
+
+To pass this checkpoint, click on the Terminal and press the Enter key.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
