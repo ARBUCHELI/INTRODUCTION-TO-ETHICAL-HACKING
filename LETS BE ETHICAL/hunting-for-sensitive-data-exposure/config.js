@@ -75,6 +75,4 @@ const settings = {
       sans-serif
       `,
     },
-  
-    /*=== PLEASE DO NOT MAKE ANY EDITS BELOW THIS LINE ===*/
   };
