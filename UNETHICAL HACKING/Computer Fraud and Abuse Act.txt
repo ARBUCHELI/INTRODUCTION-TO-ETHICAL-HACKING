@@ -1,0 +1,17 @@
+# COMPUTER FRAUD & ABUSE ACT
+----------------------------
+
+* What Is The Computer Fraud & Abuse Act?
+-----------------------------------------
+Have you ever wondered what makes hacking illegal?
+
+In the 1980s, some lawmakers created the first federal computer fraud law, the Computer Fraud and Abuse Act (CFAA). CFAA primarily deals with hacking into systems. According to the 
+National Association of Criminal Defense Lawyers, the CFAA “prohibits intentionally accessing a computer without authorization or in excess of authorization.” However, this definition 
+falls short as it “fails to define what ‘without authorization’ means.” This can be an issue as it allows for broad interpretation (which we will see later).
+
+Nonetheless, even though the act does not clearly define ‘without authorization,’ one thing is for sure, it is illegal to break into a computer system, and it is illegal to exceed what you were authorized to access.
+
+In this lesson, we’ll explore some popular case studies that made the CFAA what we have today.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
