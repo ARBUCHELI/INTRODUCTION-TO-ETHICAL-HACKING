@@ -58,3 +58,62 @@ The video poker game organization grew suspicious and reported John Kane and cha
 machines were not considered protected computers, and John Kane’s actions did not qualify as exceeding authorized access.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Van Buren v. United States
+----------------------------
+Van Buren v. the United States is an interesting one.
+
+* What Did Nathan Van Buren do?
+-------------------------------
+Nathan Van Buren, a Georgia police sergeant, was charged with violating the Computer Fraud And Abuse Act (CFAA) when he used his government credentials and resources to obtain information 
+for his personal gain.
+
+* Why Was This Wrong?
+---------------------
+Well, not only did Van Buren use government resources to obtain private information for his personal gain, but he also “exceeded authorized access” by going into the database to obtain 
+information for personal use.
+
+* How Did Nathan Van Buren Get Caught?
+--------------------------------------
+The FBI followed Nathan Van Buren from a previous claim, and the FBI staged a trap to catch him in the act. Once caught, the FBI charged him with violating the Computer Fraud and Abuse 
+Act (CFAA). Nathan Van Buren was convicted however, sometime later, Van Buren appealed to the court, mentioning that he did not “exceed authorized access” according to the CFAA because he 
+was authorized to access the computer and database since he was a police sergeant. As a result, the Supreme Court withdrew Van Buren’s conviction under the CFAA.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Conclusion
+------------
+In this lesson, you learned about the Computer Fraud and Abuse Act (CFAA) and gain summaries of some cases that redefined the act. As an ethical hacker, it’s essential to know about the 
+CFAA as it can provide some guidance about ethical hacking or be ethical. As you continue your ethical hacking journey, remember that requesting permission to access information is 
+essential and puts the ethical in ethical hacking.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
