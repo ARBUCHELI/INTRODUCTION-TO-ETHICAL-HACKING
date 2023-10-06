@@ -15,3 +15,24 @@ In this lesson, we’ll explore some popular case studies that made the CFAA wha
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* United States v. Morris
+-------------------------
+Sometimes being the first is not always great. Take, for example, Robert Morris.
+
+What Did Robert Morris do?
+--------------------------
+Robert Morris, a student at Cornell University at the time, created and released one of the first worms on the internet. His action caused several computers to be infected and systems to 
+be destroyed.
+
+Why Was This Wrong?
+-------------------
+You can imagine the chaos after releasing a worm onto the internet that infected several computers and destroyed systems. Robert Morris’s decision to release the worm to prove a point on 
+the lack of internet security and hide his identity by releasing the worm on different school networks led him to be charged with violating the Computer Fraud And Abuse Act (CFAA).
+
+How Did Robert Morris Get Caught?
+---------------------------------
+One of Morris’ friends made an anonymous call to a news agency, and eventually, the news agency reported the culprit to the public. From there, the FBI launched an investigation and 
+confirmed that Robert Morris was the culprit.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
