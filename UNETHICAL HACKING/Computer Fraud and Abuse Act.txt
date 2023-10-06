@@ -36,3 +36,25 @@ confirmed that Robert Morris was the culprit.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* United States v. Kane
+-----------------------
+Software bugs exist, and most individuals take advantage of those bugs. However, what if a software bug in a video poker machine causes someone who took advantage of this vulnerability to 
+win hundreds of thousands of dollars? Does this exploitation of the software bug fall under exceeding unauthorized access?
+
+Well, that was one of the main questions in the United States v. Kane case.
+
+* What Did John Kane do?
+------------------------
+John Kane discovered a vulnerability within a video poker game that he took advantage of for several months before he got caught.
+
+* Why Was This Wrong?
+---------------------
+When John Kane found the video poker game’s vulnerability, he did not report it to the organization. Instead, he took advantage of the vulnerability to win hundreds of thousands of 
+dollars.
+
+* How Did John Kane Get Caught?
+-------------------------------
+The video poker game organization grew suspicious and reported John Kane and charged him with violating the CFAA. However, the charges against John Kane were dismissed because video poker 
+machines were not considered protected computers, and John Kane’s actions did not qualify as exceeding authorized access.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
